@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <!-- Step 1: import the element to test -->
+    <link rel="import" href="../ascii-shrug.html">
+  </head>
+  <body>
+
+    <!-- You can use the document as a place to set up your fixtures. -->
+    <ascii-shrug></ascii-shrug>
+
+    <script>
+      var myEl = document.querySelector('ascii-shrug');
+
+      suite('<ascii-shrug>', function() {
+
+        test('element is defined', function() {
+          assert.isDefined(myEl, 'element is defined. Shrug. Moving on.');
+        });
+
+      });
+    </script>
+
+  </body>
+</html>
